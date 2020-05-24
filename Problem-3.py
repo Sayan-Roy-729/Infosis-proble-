@@ -6,22 +6,23 @@
 def sum_of_numbers_divisable_by_4():
 
     print("You can enter a number as long as you want. Otherwise press q to quite")
-
+    num = 0
+    
     while True:
-        number = input("Enter the number: ")
-        num = 0
 
+        number = input("Enter the number: ")
+        
         if number != "q":
             number = int(number)
             if number%4 == 0:
-               
                 num = num + number
-                print(num)
-
+                
         elif number == "q":
             print(f"The sum of the number(s) which is divisable by 4 is {num}")
             break
 
 sum_of_numbers_divisable_by_4()
+
+    
 
     
